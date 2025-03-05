@@ -23,7 +23,7 @@ export default class Create extends React.Component {
 
     const { title, description, author } = this.state;
 
-    Axios.post("https://firebase-server.vercel.app", {
+    Axios.post("https://firebase-server-david.vercel.app", {
       title,
       description,
       author,

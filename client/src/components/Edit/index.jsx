@@ -41,7 +41,7 @@ export default class Edit extends React.Component {
 
     const { title, description, author } = this.state;
 
-    Axios.put(`http://localhost:3000/${this.state.key}`, {
+    Axios.put(`https://firebase-server-david.vercel.app/${this.state.key}`, {
       title,
       description,
       author
