@@ -42,7 +42,7 @@ app.get("/:id", function (req, res) {
 app.get("/", function (req, res) {
   console.log("HTTP Get Request");
   var userReference = firebase.database().ref("/Data/");
-
+  
   userReference.on(
     "value",
     function (snapshot) {
