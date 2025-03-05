@@ -15,7 +15,7 @@ export default class Edit extends React.Component {
   }
 
   componentDidMount() {
-    Axios.get(`https://firebase-server.vercel.app/${this.props.match.params.id}`).then((res) => {
+    Axios.get(`https://firebase-server-david.vercel.app/${this.props.match.params.id}`).then((res) => {
       if (res.data != null) {
         let board = res.data;
         this.setState({
